@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 12px;
+}
+
+@layer base {
+  html, body { @apply h-full; }
+  body { @apply antialiased; }
+}
+
+@layer components {
+  .card { @apply rounded-xl bg-white p-4 shadow-sm dark:bg-charcoal/40 border border-black/5 dark:border-white/5; }
+}
